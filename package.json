@@ -1,0 +1,19 @@
+{
+  "name": "phase-3-movie-finder-project-frontend",
+  "version": "1.0.0",
+  "description": "A movie app that a user can add,update and view movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start, node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranklinKipchumba/Phase-3-Movie-Finder-Project-FrontEnd.git"
+  },
+  "author": "Franklin Kipchumba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranklinKipchumba/Phase-3-Movie-Finder-Project-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/FranklinKipchumba/Phase-3-Movie-Finder-Project-FrontEnd#readme"
+}
