@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import EditTask from '../modals/EditTask';
-import  '../../src/App.css'
+import EditMovie from '../modals/EditMovie';
+import  '../../src/components/App/App.css'
 
-const Card = ({taskObj, loggedIn, handleNewPost, deleteNote}) => {
+const Card = ({taskObj, loggedIn, handleNewPost, deletemovie}) => {
     const [modal, setModal] = useState(false);
    
 
@@ -34,11 +34,11 @@ const Card = ({taskObj, loggedIn, handleNewPost, deleteNote}) => {
     }
 
     const handleDelete = () => {
-        fetch(`http://localhost:9293/users/${loggedIn.id}/notes/${taskObj.id}`, {
+        fetch(`http://localhost:9293/users/${loggedIn.id}/movies/${taskObj.id}`, {
             method: 'DELETE',
         })
         .then((res) => res.json())
-        .then(() => deleteNote(taskObj.id))
+        .then(() => deletemovie(taskObj.id))
     }
 
 
@@ -56,7 +56,7 @@ const Card = ({taskObj, loggedIn, handleNewPost, deleteNote}) => {
             <i class="fas fa-trash-alt" onClick={handleDelete} style = {{"color" : colors[20%5].primaryColor, "cursor" : "pointer"}} ></i>
         </div>
 </div>
-<EditTask modal ={modal} loggedIn={loggedIn} handleNewPost={handleNewPost} toggle ={toggle} taskObj ={taskObj}/>
+<EditMovie modal ={modal} loggedIn={loggedIn} handleNewPost={handleNewPost} toggle ={toggle} taskObj ={taskObj}/>
 </div>
 );
 };
