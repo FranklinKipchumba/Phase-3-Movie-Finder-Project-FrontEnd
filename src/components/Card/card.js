@@ -48,8 +48,9 @@ const Card = ({taskObj, loggedIn, handleNewPost, deletemovie}) => {
     <div class = "card-wrapper mr-5">
     <div class = "card-top" style={{"background-color": colors[1%5].primaryColor}}></div>
     <div class = "task-holder">
+    <span class = "card-header" style={{"background-color": colors[4%5].secondaryColor, "border-radius": "10px"}}>{taskObj.title}</span>
         <span class = "card-header" style={{"background-color": colors[4%5].secondaryColor, "border-radius": "10px"}}>{taskObj.category}</span>
-        <p className = "mt-3">{taskObj.todos}</p>
+        <p className = "mt-3">{taskObj.description}</p>
 
         <div style={{"position": "absolute", "right" : "20px", "bottom" : "20px"}}>
             <i class = "far fa-edit mr-3" style={{"color" : colors[19%5].primaryColor, "cursor" : "pointer"}} onClick={()=> setModal(true)}></i>

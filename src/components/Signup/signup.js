@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import "../components/signup.css";
+import "../components/Signup/signup.css";
 
 function Signup({ addNewUser }) {
     const initFormState = {
-        username: '',
+        user_name: '',
         email: '',
         password: ''
     }

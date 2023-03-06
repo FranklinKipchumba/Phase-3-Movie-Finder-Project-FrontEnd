@@ -56,7 +56,7 @@ function Login({ setLoggedIn }) {
             <br></br>
             <form className = 'formWrapper' onSubmit = {handleSubmit} autoComplete="off">
                 <div class = "user-box">
-                <input className = 'input' type = 'text' name = 'user_name' placeholder = 'User_name' value = {formState.user_name} onChange = {formChange} required />
+                <input className = 'input' type = 'text' name = 'user_name' placeholder = 'User_name' value = {formState.username} onChange = {formChange} required />
                 </div>
                 <br></br>
                 <div class="user-box">
