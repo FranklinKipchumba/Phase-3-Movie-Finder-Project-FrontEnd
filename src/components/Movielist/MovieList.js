@@ -2,11 +2,11 @@ import { useNavigate } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import CreateTask from '../modals/CreateMovie';
 import { useState } from 'react';
-import Card from './Card';
+import Card from '../Card/card';
 import Search from '../Search/search';
 import "../Signup/signup.css";
 
-const MovieList =({movies, loggedIn, deleteMovie, handleNewPost}) => {
+const MovieList =({movies, loggedIn, deleteMovie, handleNewPost, Search}) => {
     const [modal, setModal] = useState(false);
 
     const toggle =()=> {
@@ -36,11 +36,12 @@ const MovieList =({movies, loggedIn, deleteMovie, handleNewPost}) => {
     </div> 
    
     
-    <CreateTask toggle ={toggle} handleNewPost={handleNewPost} modal={modal} loggedIn={loggedIn}/>
+    <CreateTask toggle ={toggle} handleNewPost={handleNewPost} modal={modal} loggedIn={loggedIn} Search={Search}/>
     
      
     </>
      );
+     
 };
 
 
