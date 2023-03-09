@@ -1,6 +1,10 @@
 .top {
-  background-color: rgb(0, 174, 255);
-  top: 40%
+  background-color: rgb(0, 0, 0);
+  top: 40%;
+  text-align: left;
+}
+.span{
+  text-align: right;
 }
 
 link {
@@ -19,7 +23,7 @@ link {
   left: 0;
   top: 0;
   font-size: xx-large;
-  color: white;
+  color: rgb(255, 0, 0);
   background: url(../Movies/wallpaper.jpg), scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +41,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: rgb(0, 132, 255);
+  color: rgb(255, 0, 0);
 }
 
 /* mouse over link */
@@ -47,7 +51,7 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: blue;
+  color: rgb(255, 0, 0);
 }
 
 form {

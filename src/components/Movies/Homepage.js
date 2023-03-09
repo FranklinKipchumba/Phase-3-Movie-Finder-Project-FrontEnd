@@ -6,12 +6,18 @@ function Homepage() {
 
     return(
         <div className="homenav">
-            <image scr="./Movies/logo.jpg"/>
+            <image scr="../Movies/logo.jpg"/>
             <nav className="top">
+                <Link to= "/rigisterpage">Home</Link>
+                <Link to= "/rigisterpage">Movies</Link>
+                <Link to= "/rigisterpage">Hot News</Link>
+                <Link to= "/rigisterpage"></Link>
+                <span>
                 <Link to="/registerpage">Sign Up</Link>
                 <Link to="/login">Login</Link>
+                </span>
             </nav>
-            <h1 className="bottom">Welcome to FrankNet, Where the movies become a reality
+            <h1 className="bottom">Welcome to FrankNet.
             </h1>
         </div>
     )
