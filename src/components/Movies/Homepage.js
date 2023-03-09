@@ -4,18 +4,21 @@ import { Link } from "react-router-dom";
 
 function Homepage() {
 
-    return(
+    return (
         <div className="homenav">
-            <image scr="../Movies/logo.jpg"/>
             <nav className="top">
-                <Link to= "/rigisterpage">Home</Link>
-                <Link to= "/rigisterpage">Movies</Link>
-                <Link to= "/rigisterpage">Hot News</Link>
-                <Link to= "/rigisterpage"></Link>
-                <span>
-                <Link to="/registerpage">Sign Up</Link>
-                <Link to="/login">Login</Link>
-                </span>
+                <nav className="logo">
+                    <img src="./logo.jpg" alt="FrankNet" />
+                </nav>
+                <Link to="/registerpage">Home</Link>
+                <Link to="/registerpage">Movies</Link>
+                <Link to="/registerpage">Hot News</Link>
+                <Link to="/registerpage"></Link>
+                <nav className="split">
+                    <Link to="/registerpage">Sign Up</Link>
+                    <Link to="/login">Login</Link>
+                </nav>
+
             </nav>
             <h1 className="bottom">Welcome to FrankNet.
             </h1>
